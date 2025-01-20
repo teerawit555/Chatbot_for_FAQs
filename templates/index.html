@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot API</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Header -->
+        <div class="chat-header">
+            <h2>Chatbot TT</h2>
+        </div>
+
+        <!-- Chatbox -->
+        <div id="chat-box" class="chat-box">
+            <!-- Messages will appear here -->
+        </div>
+
+        <!-- User Input -->
+        <div class="chat-input">
+            <textarea id="user-input" placeholder="Type your message here..."></textarea>
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
